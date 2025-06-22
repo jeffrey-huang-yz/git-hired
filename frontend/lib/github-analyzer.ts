@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest"
-import type { Repository, GitHubAnalysis } from "@/app/page"
+import type { Repository, GitHubAnalysis } from "@/app/dashboard/page"
 import { analyzeCodeQuality } from "./code-quality-analyzer"
 import { compareReadmeToJob } from "./readme-job-comparator"
 

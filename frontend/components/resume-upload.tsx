@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Upload, FileText, AlertCircle } from "lucide-react"
-import type { JobPosting, Candidate } from "@/app/page"
+import type { JobPosting, Candidate } from "@/app/dashboard/page"
 import { parseResumes } from "@/lib/resume-parser"
 import { analyzeWithGemini } from "@/lib/gemini-analyzer"
 

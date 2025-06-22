@@ -1,7 +1,7 @@
 import { generateText } from "ai"
 import { google } from "@ai-sdk/google"
 import type { ParsedResume } from "./resume-parser"
-import type { JobPosting, GitHubAnalysis, Repository } from "@/app/page"
+import type { JobPosting, GitHubAnalysis, Repository } from "@/app/dashboard/page"
 
 export interface AnalysisResult {
   overallScore: number

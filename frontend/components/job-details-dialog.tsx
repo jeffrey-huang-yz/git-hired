@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Eye, Upload, Users } from "lucide-react"
-import type { JobPosting } from "@/app/page"
+import type { JobPosting } from "@/app/dashboard/page"
 // import { ResumeUpload } from "@/components/resume-upload"
 
 const ResumeUpload = dynamic(() => import("@/components/resume-upload").then(mod => mod.ResumeUpload), { ssr: false })

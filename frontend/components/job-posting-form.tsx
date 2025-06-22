@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { X } from "lucide-react"
-import type { JobPosting } from "@/app/page"
+import type { JobPosting } from "@/app/dashboard/page"
 
 interface JobPostingFormProps {
   onSubmit: (job: Omit<JobPosting, "id" | "createdAt" | "candidateCount" | "status">) => void
