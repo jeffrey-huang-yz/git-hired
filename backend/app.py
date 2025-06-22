@@ -24,8 +24,8 @@ app = Flask(__name__)
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    os.getenv("NEXT_PUBLIC_API_URL"),
-    "http://justgitajoblol.compare"
+    "https://justgitajoblol.compare",
+    os.getenv("NEXT_PUBLIC_API_URL")
 ]
 CORS(
     app,
