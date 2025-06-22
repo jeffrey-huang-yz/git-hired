@@ -1148,6 +1148,11 @@ export function ResultsDialog({ job, open, onOpenChange }: ResultsDialogProps) {
                                 >
                                   {skill} {isMatched && "✓"}
                                 </Badge>
+                                {isMatched && (
+                                  <span className="text-xs text-gray-600">
+                                    ({Math.round(proficiency as number)}/100)
+                                  </span>
+                                )}
                               </div>
                             )
                           })}
