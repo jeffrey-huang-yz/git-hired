@@ -1,14 +1,16 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import dynamic from "next/dynamic"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
 import { Plus, Users, FileText, Trash2 } from "lucide-react"
-import { JobPostingForm } from "@/components/job-posting-form"
-import { JobDetailsDialog } from "@/components/job-details-dialog"
-import { ResultsDialog } from "@/components/results-dialog"
+
+const JobPostingForm = dynamic(() => import("@/components/job-posting-form").then(mod => ({ default: mod.JobPostingForm })), { ssr: false })
+const JobDetailsDialog = dynamic(() => import("@/components/job-details-dialog").then(mod => ({ default: mod.JobDetailsDialog })), { ssr: false })
+const ResultsDialog = dynamic(() => import("@/components/results-dialog").then(mod => ({ default: mod.ResultsDialog })), { ssr: false })
 
 export interface JobPosting {
   id: string
