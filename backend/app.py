@@ -21,12 +21,19 @@ load_dotenv()
 app = Flask(__name__)
 
 # Configure CORS - Most permissive for development
-CORS(app, 
-     origins=["http://localhost:3000", "http://127.0.0.1:3000", "os.getenv("NEXT_PUBLIC_API_URL")", "http://justgitajoblol"],  # Specific origins for security
-     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-     allow_headers=["Content-Type", "Authorization", "Accept"],
-     supports_credentials=True,
-     expose_headers=["*"]
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    os.getenv("NEXT_PUBLIC_API_URL"),
+    "http://justgitajoblol"
+]
+CORS(
+    app,
+    origins=[o for o in origins if o],
+    methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
+    supports_credentials=True,
+    expose_headers=["*"]
 )
 
 # Alternative CORS configuration
