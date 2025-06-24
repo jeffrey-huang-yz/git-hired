@@ -2,6 +2,8 @@
 
 Git-Hired is a full-stack application that helps recruiters and hiring managers analyze GitHub profiles and match candidates to job requirements using advanced analytics and AI. It provides deep insights into candidates' coding skills, activity, code quality, and project documentation, making technical hiring more data-driven and efficient.
 
+Check out our demo video [here](https://youtu.be/X81xl0mgMdI).
+
 ---
 
 ## Features
