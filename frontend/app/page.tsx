@@ -142,9 +142,8 @@ export default function LandingPage() {
                 variant="outline"
                 size="lg"
                 className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-                href="/demo"
                 >
-                <a href="/demo">
+                <a href="/https://devpost.com/software/githire-m8ouqg">
                   Watch Demo
                   <Zap className="ml-2 w-5 h-5" />
                 </a>
